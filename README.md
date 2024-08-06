@@ -39,10 +39,9 @@ Random cropping was used to ensure that the model did not learn to exploit padde
 The model was fine-tuned using EfficientNet-B4 as a backbone, with the final layer adjusted to output two values corresponding to the squish ratios. The training involved:
 - **Optimizer**: Adam
 - **Loss Function**: Mean Squared Error (MSE)
+- **Learning Rate**: Initial: 1e-3
 
-The model was trained for 2 epochs:
-- **Epoch 1**: Learning Rate = 1e-3
-- **Epoch 2**: Learning Rate = 1e-4
+The model was trained for 3 epochs, with a learning rate scheduler that reduces the learning rate by the factor of `0.1` per epoch.
 
 This approach was sufficient for the task, as the model showed good performance after these two epochs.
 
@@ -51,6 +50,10 @@ This approach was sufficient for the task, as the model showed good performance 
 ### Number of Parameters
 
 The total number of trainable parameters in the model is approximately 19M. This includes the parameters of the EfficientNet-B4 backbone and the added fully connected layers.
+
+## Results
+
+!(results)[media/results.jpg]
 
 ### Next Steps
 
