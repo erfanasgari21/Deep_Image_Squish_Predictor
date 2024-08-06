@@ -43,7 +43,7 @@ The model was fine-tuned using EfficientNet-B4 as a backbone, with the final lay
 
 The model was trained for 3 epochs, with a learning rate scheduler that reduces the learning rate by the factor of `0.1` per epoch.
 
-This approach was sufficient for the task, as the model showed good performance after these two epochs.
+This approach was sufficient for the task, as the model showed good performance after these 3 epochs.
 
 ![training loss](media/training-loss.png)
 
