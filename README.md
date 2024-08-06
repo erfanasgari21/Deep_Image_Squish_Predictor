@@ -1,7 +1,5 @@
 # Deep Image Squish Predictor
 
-## Problem Statement
-
 I recently delved into self-supervised deep learning and wanted to try out a fun and practical project using this new approach. My idea was to create a model that can figure out how much an image has been squished or distorted. While this might sound niche, it's a neat way to see self-supervised learning in action, and it could be useful in various tasks where understanding image distortions matters.
 
 ## Methodology
