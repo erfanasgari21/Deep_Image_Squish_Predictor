@@ -53,7 +53,7 @@ The total number of trainable parameters in the model is approximately 19M. This
 
 ## Results
 
-!(results)[media/results.jpg]
+![results](media/results.jpg)
 
 ### Next Steps
 
